@@ -23,6 +23,16 @@ public class FixedDepositAccount extends BankAccount {
 	}
 	
 	
+	
+	
+	public Float getInterest() {
+		return interest;
+	}
+
+	public Integer getDuration() {
+		return duration;
+	}
+
 	@Override
 	public void setBalance(float balance){
 		System.out.println("Balance cannot be changed");
