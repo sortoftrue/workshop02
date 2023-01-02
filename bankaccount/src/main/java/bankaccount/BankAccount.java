@@ -62,7 +62,7 @@ public class BankAccount {
 		return accountNumber;
 	}
 	
-	public void deposit(Float amount) throws Exception {
+	public void deposit(Float amount) {
 		
 		if(amount<=0 || isClosed) {
 			throw new IllegalArgumentException();
@@ -77,7 +77,7 @@ public class BankAccount {
 		}	
 	}
 	
-	public void withdraw(Float amount) throws Exception {
+	public void withdraw(Float amount) {
 		
 		if(amount<=0 || isClosed) {
 			throw new IllegalArgumentException();
